@@ -71,8 +71,6 @@ canvas.onclick = function(event) {
       current += 1;
     }
   }
-
-  setTimeout(update, 60);
 }
 
-setTimeout(update, 120);
+setInterval(update, 16);

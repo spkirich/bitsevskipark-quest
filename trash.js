@@ -82,8 +82,6 @@ function handlePress(p) {
       if (iss[i][j] !== null && iss[i][j].contains(p)) picked = [i, j];
     }
   }
-
-  setTimeout(update, 60);
 }
 
 function handleMove(p) {
@@ -92,8 +90,6 @@ function handleMove(p) {
     sprite.x = p.x - sprite.width  / 2;
     sprite.y = p.y - sprite.height / 2;
   }
-
-  setTimeout(update, 60);
 }
 
 function handleRelease(p) {
@@ -102,8 +98,6 @@ function handleRelease(p) {
   }
 
   picked = null;
-
-  setTimeout(update, 60);
 }
 
 canvas.onmousedown = function(event) {
@@ -133,4 +127,4 @@ canvas.ontouchend = function(event) {
   event.preventDefault();
 }
 
-setTimeout(update, 120);
+setInterval(update, 16);
