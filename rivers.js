@@ -4,8 +4,9 @@ var fields = Array(rivers.length);
 for (var i = 0; i < fields.length; i++) {
   fields[i]           = document.getElementById("field_" + i);
   fields[i].value     = hideLetters(rivers[i]);
-  fields[i].onkeydown = handler(i);
-  fields[i].onpaste   = function(event) { event.preventDefault() };
+  fields[i].onpaste   = suppress;
+  fields[i].onkeydown = suppress;
+  fields[i].onkeyup   = handler(i);
 }
 
 function handler(i) {
@@ -21,6 +22,10 @@ function handler(i) {
 
     event.preventDefault();
   };
+}
+
+function suppress(event) {
+  event.preventDefault();
 }
 
 function hideLetters(word) {
