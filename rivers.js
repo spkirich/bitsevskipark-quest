@@ -23,6 +23,10 @@ function handler(x) {
   };
 }
 
+function suppress(event) {
+  event.preventDefault();
+}
+
 function hideLetters(word) {
   return word[0] + "*".repeat(word.length - 2) + word[word.length - 1];
 }
