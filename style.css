@@ -1,11 +1,18 @@
 body {
-  background-color: #55aa16;
+  background-color: #407e10;
   font-family: sans-serif;
 }
 
-div.header {
+div {
+  background-color: #55aa16;
   border: 4px solid #152a06;
-  margin: 1%;
+  margin-left:  5%;
+  margin-right: 5%;
+  padding: 1%;
+}
+
+div.content {
+  margin-top: 5px;
 }
 
 h1 {
@@ -17,7 +24,7 @@ canvas {
   background-image: url("bg/forest.png");
   border: 2px solid #152a06;
   display: block;
-  margin:  auto;
+  margin: auto;
 }
 
 #map {
@@ -26,6 +33,18 @@ canvas {
 
 #puzzle {
   background: none;
+}
+
+input {
+  background-color: #55aa16;
+  border: 2px solid #152a06;
+  font-family: monospace;
+  font-size: 24pt;
+  text-align: center;
+  color: #152a06;
+  display: block;
+  margin: auto;
+  margin-top: 5px;
 }
 
 @media (max-width: 640px) {
@@ -37,5 +56,9 @@ canvas {
 
   #map {
     background-image: url("bg/map-small.png");
+  }
+
+  input {
+    font-size: 18pt;
   }
 }
