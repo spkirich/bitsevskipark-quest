@@ -11,7 +11,7 @@ div {
   padding: 1%;
 }
 
-div.content {
+.content {
   margin-top: 5px;
 }
 
@@ -45,6 +45,12 @@ input {
   display: block;
   margin: auto;
   margin-top: 5px;
+}
+
+.help {
+  font-style: italic;
+  text-align: center;
+  color: #152a06;
 }
 
 @media (max-width: 640px) {

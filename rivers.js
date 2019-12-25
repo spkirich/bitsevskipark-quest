@@ -11,15 +11,17 @@ for (var i = 0; i < fields.length; i++) {
 
 function handler(x) {
   return function(event) {
-    var input = event.data.toUpperCase();
-    for (var i = 0; i < rivers[x].length; i++) {
-      for (var j = 0; j < input.length; j++) {
-        if (rivers[x][i] == input[j]) {
-          fields[x].value = replaceAt(values[x], rivers[x][i], i);
-          values[x]       = fields[x].value;
-        } else fields[x].value = values[x];
+    if (event.data) {
+      var input = event.data.toUpperCase();
+      for (var i = 0; i < rivers[x].length; i++) {
+        for (var j = 0; j < input.length; j++) {
+          if (rivers[x][i] == input[j]) {
+            fields[x].value = replaceAt(values[x], rivers[x][i], i);
+            values[x]       = fields[x].value;
+          } else fields[x].value = values[x];
+        }
       }
-    }
+    } else fields[x].value = values[x];
   };
 }
 

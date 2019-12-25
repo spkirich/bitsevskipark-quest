@@ -114,4 +114,4 @@ canvas.ontouchend = function(event) {
   event.preventDefault();
 }
 
-setTimeout(update, 16);
+setInterval(update, 16);
