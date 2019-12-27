@@ -53,6 +53,19 @@ input {
   color: #152a06;
 }
 
+.info {
+  background-color: #6bd31b;
+  border: 2px solid #152a06;
+  padding: 10px;
+  font-size: 16pt;
+}
+
+img {
+  border: 2px solid #152a06;
+  width:  75%;
+  height: 25%;
+}
+
 @media (max-width: 640px) {
   canvas {
     background-image: url("bg/forest-small.png");
