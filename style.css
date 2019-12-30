@@ -81,6 +81,7 @@ img {
 }
 
 .home {
+  background-color: #000000;
   display: block;
   margin: auto;
   width: auto;
